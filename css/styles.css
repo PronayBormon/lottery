@@ -1,0 +1,237 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+h1,h2,h3,h4,h5,h6,p,a,ul,li{
+    margin: 0;
+    text-decoration: none;
+}
+a,p{
+    color: #FEF2F4;
+}
+button:focus{
+    outline: 0;
+    box-shadow: none;
+}
+body{
+    background-image: url(../images/main-bg.svg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+.navbar_part{
+    background: #13005A;
+}
+.navbar_part .navbar-brand{        
+    color: #FEF2F4;        
+    text-transform: uppercase;        
+    font-size: 20px;        
+    border: 1px solid #FEF2F4;        
+    padding: 5px 10px;
+}
+.navbar_part .navbar{
+
+}
+.navbar_part .navbar-nav .nav-link{
+    color: #d6d3d3;
+    text-transform: capitalize;
+    position: relative;
+    padding: 0;
+    margin: 0px 5px;
+    padding-top: 3px;
+}
+.navbar_part .nav-link:hover{    
+    color: #fef2ec;
+}
+.navbar_part .navbar-nav .nav-link.active{
+    color: #fef2ec;
+}
+.navbar_part .navbar-nav .nav-link::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background-color: #1C82AD;
+    transition: .4s all ease-in-out;
+}
+.navbar_part .navbar-nav .nav-link.active::after,.navbar_part .navbar-nav .nav-link:hover::after{
+    width: 100%;
+}
+.btn_login{
+    margin: 0px 5px;
+    text-decoration: none;
+    color: #fff;
+}
+.btn_Signup{
+    margin: 0px 5px;
+    text-decoration: none;
+    background: #03C988;
+    color: #f0eeee;
+    padding: 3px 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #6c6c6c4f;
+    transition: .4s all ease-in-out;
+}
+.btn_login:hover{
+    
+}
+.btn_Signup:hover{
+    background-color: #029665;
+    color: #fff;
+}
+.navbar-toggler{
+    color: #fff;
+    /* background-color: #fff; */
+    border: none;
+}
+.navbar-toggler:focus{
+    outline: 0  ;
+    box-shadow: none;
+
+}
+.navbar-toggler i{
+    
+}
+.navbar_part .offcanvas{
+    background-color: #1C82AD;
+}
+@media(max-width: 1200px){
+    .btn_Signup {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .navbar_part .navbar-nav .nav-link::after{
+        display: none;
+    }
+    .navbar_part .navbar-brand {
+        font-size: 16px;
+    }
+}
+@media(max-width: 426px){
+    .navbar_part .navbar-brand {
+        font-size: 12px;
+    }
+}
+
+
+/* box  */
+.create_lottery{
+
+margin-top: 20px;
+
+box-shadow: 0 0 20px #e9e2e2;
+
+border-radius: 10px;
+}
+.lot_title{
+
+padding: 20px;
+
+background: #1C82AD;
+
+color: #fff;
+
+border-top-left-radius: 10px;
+
+border-top-right-radius: 10px;
+
+margin-bottom: 20px;
+}
+.lot_title h5{
+
+font-size: 18px;
+}
+.lot_input{
+
+}
+.lot_input form{
+    padding: 20px;
+    padding-bottom: 0px;
+}
+.lot_input form input{
+
+height: 30px;
+
+width: 30px;
+
+margin: 3px 5px;
+
+border-radius: 50%;
+
+background: linear-gradient(145deg, #f0f0f0, #cacaca);
+
+box-shadow: 5px 5px 10px #dad5d5, -5px -5px 10px #ffffff;
+
+border: 1px solid #00337C;
+
+text-align: center;
+}
+.lot_input form input[type="reset"]{
+
+border-radius: 0;
+
+padding: 3px 10px;
+
+height: auto;
+
+width: auto;
+
+border-radius: 5px;
+
+background: red;
+
+border: navajowhite;
+
+color: #fff;
+
+text-transform: capitalize;
+}
+.lot_input form input[type="submit"]{
+
+height: auto;
+
+width: auto;
+
+border-radius: 0;
+
+padding: 3px 10px;
+
+border-radius: 5px;
+
+border: none;
+
+background: #03c988;
+
+color: #fff;
+}
+.lot_buttons{
+    display: grid;
+    grid-template-columns: repeat(5, 12fr);
+    grid-template-rows: auto;
+    padding: 20px;
+    padding-top: 10px;
+}
+.lot_buttons button{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    /* background: linear-gradient(145deg, #f0f0f0, #cacaca); */
+    box-shadow:  5px 5px 10px #bebebe,
+    -5px -5px 10px #ffffff;
+    border: 1px solid #00337C;
+    margin: 5px;
+}
+.form_input{
+    display: flex;
+    justify-content: center;
+    margin: 5px 0px;
+    margin-bottom: 10px;
+}
+.lot_buttons button.active{
+    background-color: green;
+    color: #fff;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Button Value to Input</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <h1>Button Value to Input</h1>
+
+  <!-- Create buttons and inputs dynamically using a loop -->
+  <div id="buttons">
+    <button class="button">Button 0</button>
+    <button class="button">Button 1</button>
+    <!-- Add buttons up to Button 99 as needed -->
+  </div>
+
+  <div id="inputs">
+    <input type="text" class="input" readonly>
+    <input type="text" class="input" readonly>
+    <input type="text" class="input" readonly>
+    <input type="text" class="input" readonly>
+    <input type="text" class="input" readonly>
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      // Click event handler for buttons
+      $(".button").click(function () {
+        var buttonValue = parseInt($(this).text().split(' ')[1]); // Extract the button value
+        var $emptyInput = $(".input").filter(function () {
+          return $(this).val() === "";
+        });
+
+        if ($emptyInput.length > 0) {
+          $emptyInput.first().val(buttonValue);
+        }
+      });
+    });
+  </script>
+</body>
+</html>
