@@ -1,96 +1,300 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- title  -->
-    <title>Lottery</title>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- title  -->
+  <title>Lottery</title>
 
 
-    <!-- bootstrap 5.3    -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    
-    <!-- fontawsome cdn  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-     <!-- style css  -->
-     <link rel="stylesheet" href="css/styles.css">
+  <!-- bootstrap 5.3    -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
-  </head>
-  <body>
-    
-    <!-- navbar part start here  -->
-    <div class="navbar_part  ">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <nav class="navbar navbar-expand-xl ">
-              <div class="container">
-                <a href="#" class="navbar-brand">Lottery</a>
-                <button class="navbar-toggler" type="button"
-                  data-bs-toggle="offcanvas" 
-                  data-bs-target="#navbarOffcanvas"
-                  aria-controls="navbarOffcanvas"
-                  aria-expanded="false" aria-label="Toggle navigation">
-                  <i class="fa-solid fa-bars"></i>
-                </button>
-                <div class="offcanvas offcanvas-start " id="navbarOffcanvas"
-                    tabindex="-1" aria-labelledby="offcanvasNavbarLabel">
+  <!-- fontawsome cdn  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-                    <div class="offcanvas-header">
-                      <h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel"><a href="#" class="navbar-brand">Lottery</a></h5>
-                      <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  <!-- style css  -->
+  <link rel="stylesheet" href="css/card.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+
+</head>
+
+<body>
+
+  <!-- navbar part start here  -->
+  <div class="navbar_part  ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="navbar navbar-expand-xl ">
+            <div class="container">
+              <a href="#" class="navbar-brand">Lottery</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas"
+                aria-controls="navbarOffcanvas" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+              <div class="offcanvas offcanvas-start " id="navbarOffcanvas" tabindex="-1"
+                aria-labelledby="offcanvasNavbarLabel">
+
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel"><a href="#"
+                      class="navbar-brand">Lottery</a></h5>
+                  <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <a class="nav-item nav-link active" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-item nav-link" href="cart.html">Cart</a>
+                    <a class="nav-item nav-link" href="profile/profile.html">Profile</a>
+                    <div class="d-flex">
+                      <a class="btn_Signup" href="#login">Login</a>
+                      <a class="btn_Signup" href="#login">Create Account</a>
                     </div>
-                    <div class="offcanvas-body">          
-                      <div class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <a class="nav-item nav-link active" aria-current="page" href="index.html">Home</a>
-                        <a class="nav-item nav-link" href="test.php">test</a>
-                        <div class="d-flex">
-                          <a class="btn_Signup" href="#login">Login</a>
-                          <a class="btn_Signup" href="#login">Create Account</a>
-                        </div>
-                      </div>
-                    </div>
-                </div>  
+                  </div>
+                </div>
               </div>
-            </nav>
-          </div>
+            </div>
+          </nav>
         </div>
       </div>
     </div>
-    <!-- navbar part end here  -->
+  </div>
+  <!-- navbar part end here  -->
 
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-12 mt-4">
+            <h6>Save Ticket Number</h6>
+            <hr>
+          </div>
+        </div>
+
+        <div class="cards_">
+          <div class="card-container">
+            <div id="ccard-demo" class="empty_card">
+              <a href=""><i class="fa-solid fa-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div id="ccard-demo" class="card">
+              <div class="charge-name-wrapper">
+                <div class="charge-name-text">Lottery / Supper </div>
+              </div>
+              <div class="card-name-wrapper">
+                <div class="card-name">
+                  Ticket Number
+                </div>
+                <div class="card-name-foil">
+                  Ticket Number
+                </div>
+                <div class="card-name-foil-second">
+                  Ticket Number
+                </div>
+              </div>
+              <div class="number-wrapper">
+                <div class="card-number rgb-text">
+                  <span>5106 4618 7380 5363</span>
+                </div>
+              </div>
+              <div class="card-valid-warpper">
+                <div class="card-valid-date"><span class="valid-text">Draw Date: </span> 23/10/2023</div>
+              </div>
+              <div class="card-flag">
+                <div class="card-security">
+                  <div class="card-security-foil"></div>
+                </div>
+              </div>
+              <div class="card-chip-wraper">
+                <div class="card-chip"></div>
+                <div class="card-chip-foil"></div>
+              </div>
+              <div class="tap-topay-icon">
+                <div class="tap-icon"><i class="fa-solid fa-wifi"></i></div>
+              </div>
+            </div>
+            <div class="text-center my-2">
+              <button class="add_cart text-center m-auto">Add To cart</button>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div id="ccard-demo" class="card simple_c">
+              <div class="charge-name-wrapper">
+                <div class="charge-name-text">Lottery / Simple </div>
+              </div>
+              <div class="card-name-wrapper">
+                <div class="card-name">
+                  Ticket Number
+                </div>
+                <div class="card-name-foil">
+                  Ticket Number
+                </div>
+                <div class="card-name-foil-second">
+                  Ticket Number
+                </div>
+              </div>
+              <div class="number-wrapper">
+                <div class="card-number rgb-text">
+                  <span>5106 4618 7380 5363</span>
+                </div>
+              </div>
+              <div class="card-valid-warpper">
+                <div class="card-valid-date"><span class="valid-text">Draw Date: </span> 23/10/2023</div>
+              </div>
+              <div class="card-flag">
+                <div class="card-security">
+                  <div class="card-security-foil"></div>
+                </div>
+              </div>
+              <div class="card-chip-wraper">
+                <div class="card-chip"></div>
+                <div class="card-chip-foil"></div>
+              </div>
+              <div class="tap-topay-icon">
+                <div class="tap-icon"><i class="fa-solid fa-wifi"></i></div>
+              </div>
+            </div>            
+            <div class="text-center my-2">
+              <button class="add_cart text-center m-auto">Add To cart</button>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div id="ccard-demo" class="card c_black">
+              <div class="charge-name-wrapper">
+                <div class="charge-name-text">Lottery / Medium </div>
+              </div>
+              <div class="card-name-wrapper">
+                <div class="card-name">
+                  Ticket Number
+                </div>
+                <div class="card-name-foil">
+                  Ticket Number
+                </div>
+                <div class="card-name-foil-second">
+                  Ticket Number
+                </div>
+              </div>
+              <div class="number-wrapper">
+                <div class="card-number rgb-text">
+                  <span>5106 4618 7380 5363</span>
+                </div>
+              </div>
+              <div class="card-valid-warpper">
+                <div class="card-valid-date"><span class="valid-text">Draw Date: </span> 23/10/2023</div>
+              </div>
+              <div class="card-flag">
+                <div class="card-security">
+                  <div class="card-security-foil"></div>
+                </div>
+              </div>
+              <div class="card-chip-wraper">
+                <div class="card-chip"></div>
+                <div class="card-chip-foil"></div>
+              </div>
+              <div class="tap-topay-icon">
+                <div class="tap-icon"><i class="fa-solid fa-wifi"></i></div>
+              </div>
+            </div>
+            <div class="text-center my-2">
+              <button class="add_cart text-center m-auto">Add To cart</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 m-auto">
+        <div class="c_lottery text-center">
+          <button type="button" class="simple_btn active">Simple</button>
+          <button type="button" class="medium_btn">Medium</button>
+          <button type="button" class="super_btn">Supper</button>
+        </div>
+      </div>
+    </div>
+    <div class="row " style="min-height: 50vh;">
+      <div class="ol-xl-6 col-md-8 col-sm-10 simple m-auto">
+        <form action="">
           <div class="create_lottery">
             <div class="lot_title">
               <div>
                 <h5 class="add">Create Lottery Number</h5>
               </div>
-              <div>
-                
+              <div class="btn_sub">              
+                <input type="reset" class="btn_reset" value="reset">
+                <input type="submit" class="btn_r" name="" value="Save" name="" id="">
               </div>
             </div>
-
-
             <div class="lot_input ">
-              <form action="">
-                
+  
                 <div class="field_group">
-
-                  <div class="form_input in_field">
-                    <input type="text" placeholder="?" disabled class="input" id="">
-                    <input type="text" name="" placeholder="?" readonly class="input" id="">
-                    <input type="text" name="" placeholder="?" class="input" id="">
-                    <input type="text" name="" placeholder="?" class="input" id="">
-                  </div>
+  
+                  <form action="">
+                    <div class="form_input in_field">
+                      <input type="text" placeholder="?" disabled class="input" id="">
+                      <input type="text" name="" placeholder="?" disabled readonly class="input" id="">
+                      <input type="text" name="" placeholder="?" disabled class="input" id="">
+                      <input type="text" name="" placeholder="?" disabled class="input" id="">
+                    </div>
+                  </form>
                 </div>
                 <div class="text-center">
-                  <div>
-                    <input type="reset" class="btn_reset" value="reset">
-                    <input type="submit" class="btn_r" name="" value="Save" name="" id="">
+                  <!-- <div> -->
+                  <!-- </div> -->
+                </div>
+                <div class="lot_buttons">
+                  <button type="button" class="button clicks">0</button>
+                  <button type="button" class="button clicks">1</button>
+                  <button type="button" class="button clicks">2</button>
+                  <button type="button" class="button clicks">3</button>
+                  <button type="button" class="button clicks">4</button>
+                  <button type="button" class="button clicks">5</button>
+                  <button type="button" class="button clicks">6</button>
+                  <button type="button" class="button clicks">7</button>
+                  <button type="button" class="button clicks">8</button>
+                  <button type="button" class="button clicks"> 9</button>
+                </div>
+  
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="ol-xl-6 col-md-8 col-sm-10 medium m-auto d_hide">
+        <form action="">
+          <div class="create_lottery">
+            <div class="lot_title">
+              <div>
+                <h5 class="add">Create Lottery Number</h5>
+              </div>
+              <div class="btn_sub">              
+                <input type="reset" class="btn_reset" value="reset">
+                <input type="submit" class="btn_r" name="" value="Save" name="" id="">
+              </div>
+            </div>
+  
+  
+            <div class="lot_input ">
+  
+                <div class="field_group">
+  
+                  <div class="form_input in_field">
+                    <input type="text" name="" placeholder="?" disabled class="input" id="">
+                    <input type="text" placeholder="?" disabled class="input" id="">
+                    <input type="text" name="" placeholder="?" disabled readonly class="input" id="">
+                    <input type="text" name="" placeholder="?" disabled class="input" id="">
+                    <input type="text" name="" placeholder="?" disabled class="input" id="">
+                    <input type="text" placeholder="?" disabled class="input" id="">
+                    <input type="text" name="" placeholder="?" disabled readonly class="input" id="">
                   </div>
                 </div>
                 <div class="lot_buttons">
@@ -101,33 +305,322 @@
                   <button type="button" class="button clicks">4</button>
                   <button type="button" class="button clicks">5</button>
                   <button type="button" class="button clicks">6</button>
-                  <button  type="button" class="button clicks">7</button>
+                  <button type="button" class="button clicks">7</button>
                   <button type="button" class="button clicks">8</button>
                   <button type="button" class="button clicks"> 9</button>
+                  <button type="button" class="button clicks">10</button>
+                  <button type="button" class="button clicks">11</button>
+                  <button type="button" class="button clicks">12</button>
+                  <button type="button" class="button clicks">13</button>
+                  <button type="button" class="button clicks">14</button>
+                  <button type="button" class="button clicks">15</button>
+                  <button type="button" class="button clicks">16</button>
+                  <button type="button" class="button clicks">17</button>
+                  <button type="button" class="button clicks">18</button>
+                  <button type="button" class="button clicks">19</button>
+                  <button type="button" class="button clicks">20</button>
+                  <button type="button" class="button clicks">21</button>
+                  <button type="button" class="button clicks">22</button>
+                  <button type="button" class="button clicks">23</button>
+                  <button type="button" class="button clicks">24</button>
+                  <button type="button" class="button clicks">25</button>
+                  <button type="button" class="button clicks">26</button>
+                  <button type="button" class="button clicks">27</button>
+                  <button type="button" class="button clicks">28</button>
+                  <button type="button" class="button clicks"> 29</button>
+                  <button type="button" class="button clicks">30</button>
+                  <button type="button" class="button clicks">31</button>
+                  <button type="button" class="button clicks">32</button>
+                  <button type="button" class="button clicks">33</button>
+                  <button type="button" class="button clicks">34</button>
+                  <button type="button" class="button clicks">35</button>
+                  <button type="button" class="button clicks">36</button>
+                  <button type="button" class="button clicks">37</button>
+                  <button type="button" class="button clicks">38</button>
+                  <button type="button" class="button clicks"> 39</button>
+                  <button type="button" class="button clicks">40</button>
+                  <button type="button" class="button clicks">41</button>
+                  <button type="button" class="button clicks">42</button>
+                  <button type="button" class="button clicks">43</button>
+                  <button type="button" class="button clicks">44</button>
+                  <button type="button" class="button clicks">45</button>
+                  <button type="button" class="button clicks">46</button>
+                  <button type="button" class="button clicks">47</button>
+                  <button type="button" class="button clicks">48</button>
+                  <button type="button" class="button clicks">49</button>
+  
                 </div>
-                
-              </form>
-              
             </div>
-            <div class="" style="display: none;" id="message" >Massage</div>
-
+  
           </div>
-        </div>
+        </form>
+      </div>
+      <div class="ol-xl-6 col-md-8 col-sm-10 super m-auto d_hide">
+        <form action="">
+          <div class="create_lottery">
+            <div class="lot_title">
+              <div>
+                <h5 class="add">Create Lottery Number</h5>
+              </div>
+                <div class="btn_sub">              
+                  <input type="reset" class="btn_reset" value="reset">
+                  <input type="submit" class="btn_r" name="" value="Save" name="" id="">
+                </div>
+            </div>
+  
+  
+            <div class="lot_input ">
+  
+                <div class="field_group">
+  
+                  <div class="form_input in_field">
+                    <input type="text" placeholder="?" disabled class="input" id="">
+                    <input type="text" name="" placeholder="?" disabled readonly class="input" id="">
+                    <input type="text" name="" placeholder="?" disabled class="input" id="">
+                    <input type="text" name="" placeholder="?" disabled class="input" id="">
+                    <input type="text" placeholder="?" disabled class="input" id="">
+                    <input type="text" name="" placeholder="?" disabled readonly class="input" id="">
+                    <input type="text" name="" placeholder="?" disabled class="input" id="">
+                    <input type="text" name="" placeholder="?" disabled class="input" id="">
+                    <input type="text" placeholder="?" disabled class="input" id="">
+                    <input type="text" name="" placeholder="?" disabled readonly class="input" id="">
+                  </div>
+                </div>
+                <div class="lot_buttons">
+                  <button type="button" class="button clicks">0</button>
+                  <button type="button" class="button clicks">1</button>
+                  <button type="button" class="button clicks">2</button>
+                  <button type="button" class="button clicks">3</button>
+                  <button type="button" class="button clicks">4</button>
+                  <button type="button" class="button clicks">5</button>
+                  <button type="button" class="button clicks">6</button>
+                  <button type="button" class="button clicks">7</button>
+                  <button type="button" class="button clicks">8</button>
+                  <button type="button" class="button clicks">9</button>
+                  <button type="button" class="button clicks">10</button>
+                  <button type="button" class="button clicks">11</button>
+                  <button type="button" class="button clicks">12</button>
+                  <button type="button" class="button clicks">13</button>
+                  <button type="button" class="button clicks">14</button>
+                  <button type="button" class="button clicks">15</button>
+                  <button type="button" class="button clicks">16</button>
+                  <button type="button" class="button clicks">17</button>
+                  <button type="button" class="button clicks">18</button>
+                  <button type="button" class="button clicks">19</button>
+                  <button type="button" class="button clicks">20</button>
+                  <button type="button" class="button clicks">21</button>
+                  <button type="button" class="button clicks">22</button>
+                  <button type="button" class="button clicks">23</button>
+                  <button type="button" class="button clicks">24</button>
+                  <button type="button" class="button clicks">25</button>
+                  <button type="button" class="button clicks">26</button>
+                  <button type="button" class="button clicks">27</button>
+                  <button type="button" class="button clicks">28</button>
+                  <button type="button" class="button clicks"> 29</button>
+                  <button type="button" class="button clicks">30</button>
+                  <button type="button" class="button clicks">31</button>
+                  <button type="button" class="button clicks">32</button>
+                  <button type="button" class="button clicks">33</button>
+                  <button type="button" class="button clicks">34</button>
+                  <button type="button" class="button clicks">35</button>
+                  <button type="button" class="button clicks">36</button>
+                  <button type="button" class="button clicks">37</button>
+                  <button type="button" class="button clicks">38</button>
+                  <button type="button" class="button clicks"> 39</button>
+                  <button type="button" class="button clicks">40</button>
+                  <button type="button" class="button clicks">41</button>
+                  <button type="button" class="button clicks">42</button>
+                  <button type="button" class="button clicks">43</button>
+                  <button type="button" class="button clicks">44</button>
+                  <button type="button" class="button clicks">45</button>
+                  <button type="button" class="button clicks">46</button>
+                  <button type="button" class="button clicks">47</button>
+                  <button type="button" class="button clicks">48</button>
+                  <button type="button" class="button clicks">49</button>
+                  <button type="button" class="button clicks">50</button>
+                  <button type="button" class="button clicks">51</button>
+                  <button type="button" class="button clicks">52</button>
+                  <button type="button" class="button clicks">53</button>
+                  <button type="button" class="button clicks">54</button>
+                  <button type="button" class="button clicks">55</button>
+                  <button type="button" class="button clicks">56</button>
+                  <button type="button" class="button clicks">57</button>
+                  <button type="button" class="button clicks">58</button>
+                  <button type="button" class="button clicks">59</button>
+                  <button type="button" class="button clicks">60</button>
+                  <button type="button" class="button clicks">61</button>
+                  <button type="button" class="button clicks">62</button>
+                  <button type="button" class="button clicks">63</button>
+                  <button type="button" class="button clicks">64</button>
+                  <button type="button" class="button clicks">65</button>
+                  <button type="button" class="button clicks">66</button>
+                  <button type="button" class="button clicks">67</button>
+                  <button type="button" class="button clicks">68</button>
+                  <button type="button" class="button clicks">69</button>
+                  <button type="button" class="button clicks">70</button>
+                  <button type="button" class="button clicks">71</button>
+                  <button type="button" class="button clicks">72</button>
+                  <button type="button" class="button clicks">73</button>
+                  <button type="button" class="button clicks">74</button>
+                  <button type="button" class="button clicks">75</button>
+                  <button type="button" class="button clicks">76</button>
+                  <button type="button" class="button clicks">77</button>
+                  <button type="button" class="button clicks">78</button>
+                  <button type="button" class="button clicks">79</button>
+                  <button type="button" class="button clicks">80</button>
+                  <button type="button" class="button clicks">81</button>
+                  <button type="button" class="button clicks">82</button>
+                  <button type="button" class="button clicks">83</button>
+                  <button type="button" class="button clicks">84</button>
+                  <button type="button" class="button clicks">85</button>
+                  <button type="button" class="button clicks">86</button>
+                  <button type="button" class="button clicks">87</button>
+                  <button type="button" class="button clicks">88</button>
+                  <button type="button" class="button clicks">89</button>
+                  <button type="button" class="button clicks">90</button>
+                  <button type="button" class="button clicks">91</button>
+                  <button type="button" class="button clicks">92</button>
+                  <button type="button" class="button clicks">93</button>
+                  <button type="button" class="button clicks">94</button>
+                  <button type="button" class="button clicks">95</button>
+                  <button type="button" class="button clicks">96</button>
+                  <button type="button" class="button clicks">97</button>
+                  <button type="button" class="button clicks">98</button>
+                  <button type="button" class="button clicks">99</button>
+  
+  
+                </div>  
+            </div>
+  
+          </div>
+        </form>
       </div>
     </div>
+  </div>
+
+  <!-- footer part start here  -->
+  <footer class="footer-section">
+    <div class="container">
+        <div class="footer-links">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-top-area">
+                        <div class="left">
+                            <a href="#">
+                                <img src="images/app_store_btn.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="images/goole_play_btn.png" alt="">
+                            </a>
+                        </div>
+                        <div class="right">
+                            <ul class="links">
+                                <li>
+                                    <a href="#">About</a>
+                                </li>
+                                <li>
+                                    <a href="#">FAQs</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms of Service</a>
+                                </li>
+                                <li>
+                                    <a href="#">Privacy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <hr class="hr2">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 align-self-center">
+                    <div class="copyr-text">
+                        <span>
+                            Copyright © 2023 Lottery. All Rights Reserved By 
+                        </span>
+                        <a href="https://futuregenit.com">Futuregenit</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 align-self-center">
+                    <ul class="footer-social-links">
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-dribbble"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+  <!-- footer part end here  -->
 
 
 
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script> <!--Jquery3.7-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script> <!--Bootstrap-->
-    <script src="js/lot_number_input_btn.main.js"></script><!--button for inputs-->
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script> <!--Jquery3.7-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script> <!--Bootstrap-->
+  <script src="js/lot_number_input_btn.main.js"></script><!--button for inputs-->
 
-    <script>
-      // $(document).ready(function(){
-      //   $(".clicks").click(function(){
-      //     $('.clicks').addClass('active');
-      //   });
-      // });
-    </script>
-  </body>
+  <script>
+    $(document).ready(function () {
+      $(".simple_btn").click(function () {
+        $('.simple_btn').addClass('active');
+        $('.medium').fadeOut();
+        $('.super').fadeOut();
+        $('.simple').delay(500).fadeIn();
+      });
+      $(".medium_btn").click(function () {
+        $('.medium_btn').addClass('active');
+        $('.simple').fadeOut();
+        $('.super').fadeOut();
+        $('.medium').delay(500).fadeIn();
+      });
+      $(".super_btn").click(function () {
+        $('.super_btn').addClass('active');
+        $('.simple').fadeOut();
+        $('.medium').fadeOut();
+        $('.super').delay(500).fadeIn();
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('.c_lottery button').click(function () {
+        $('.c_lottery button').removeClass('active');
+        $(this).addClass('active');
+      })
+    })
+  </script>
+  <script src="js/rgb_animation.js"></script>
+</body>
+
 </html>
