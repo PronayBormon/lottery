@@ -139,7 +139,7 @@ body {
 }
 
 .navbar_part .offcanvas {
-    background-color: #1C82AD;
+    background-color: #ffffff;
 }
 
 @media(max-width: 1200px) {
@@ -1848,4 +1848,7 @@ box-shadow: 0px 7px 7px 0px rgba(243, 42, 126, 0.23);
     padding-bottom: 0;
     box-shadow: 0 0 20px #0000ff1a;
     border-radius: 5px;
+}
+.offcanvas-header .btn-close {
+    --bs-btn-close-white-filter: invert(1) grayscale(100%) brightness(00%) !important;
 }
